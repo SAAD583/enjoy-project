@@ -1,26 +1,30 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.body {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.CalendarDay__selected_span {
+  background: blue; 
+  color: white; 
+  border: 1px solid red; 
+}
+
+.CalendarDay__selected {
+  background: darkred;
+  color: white;
+}
+
+.CalendarDay__selected:hover {
+  background: blue;
+  color: white;
+}
+
+
+.CalendarDay__hovered_span:hover,
+.CalendarDay__hovered_span {
+  background: brown;
 }

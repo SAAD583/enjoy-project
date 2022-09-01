@@ -1,0 +1,49 @@
+.filterIconsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 10px;
+    overflow: scroll;
+    scrollbar-width: 0;
+    -ms-overflow-style: none;
+    position: relative;
+    height: 70px;
+}
+
+.filterIconsContainer::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.filterIconsItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #458DB7;
+}
+
+.filterIconsItem .iconContainer:first-of-type {
+    margin-left: 25%;
+    transform: translateX(-25%);
+}
+
+.filterIconsItem:hover {
+    border-bottom: 1px solid #F4CA93;
+}
+
+.title:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .filterIconsContainer {
+        padding: 20px 5px;
+    }
+    .filterIconsItem {
+        margin: 0 10px;
+        flex-basis: auto;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    
+}
